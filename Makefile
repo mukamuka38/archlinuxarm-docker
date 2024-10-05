@@ -18,4 +18,4 @@ $(OUTPUTDIR)/Dockerfile.%: $(OUTPUTDIR)/%.tar.zst
 
 all: image-base image-base-devel image-multilib-devel
 image-%: $(OUTPUTDIR)/Dockerfile.%
-	${OCITOOL} build -f $(OUTPUTDIR)/Dockerfile.$(*) -t archlinux/archlinux:$(*) $(OUTPUTDIR)
+	${OCITOOL} build -f $(OUTPUTDIR)/Dockerfile.$(*) -t mukamuka38/archlinuxarm:$(*) $(OUTPUTDIR)
